@@ -12,10 +12,6 @@
 -	python3 $(SRCTOP)/manage.py clean
 +	python3 manage.py clean
  
- override_dh_auto_configure:
--	cd $(SRCTOP)/src && autoreconf -i
-+	cd src && autoreconf -i
- 
  override_dh_auto_build:
 -	python3 $(SRCTOP)/manage.py build
 -	python3 $(SRCTOP)/manage.py i18n --dont-update-pot --dont-merge-po
