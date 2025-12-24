@@ -26,7 +26,8 @@
 -	python3 $(SRCTOP)/manage.py install \
 +	python3 manage.py install \
  		--prefix=/usr --layout=unix \
- 		--root=$(CURDIR)/debian/tmp/
+-		--root=$(CURDIR)/debian/tmp/
++		--root=$(CURDIR)/debian/checkbox-provider-gpgpu/
  
  override_dh_gencontrol:
 -	python3 $(SRCTOP)/manage.py packaging
